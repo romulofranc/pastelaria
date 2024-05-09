@@ -1,0 +1,97 @@
+<html>
+
+<head>
+    <link href="style.css" rel="stylesheet">
+    <meta charset="UTF-8" />
+    <title>Pastelaria do Tião</title>
+</head>
+
+<body>
+    <header>
+        <img class="Logo" src="pastelaria.png" title="Logo">
+    </header>
+    <h1 class="encomendas">Encomendas</h1>
+    <table class="tabela" id="tabelaInteira">
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Produto</th>
+                <th>Quantidade</th>
+                <th>Valor Unitário</th>
+                <th>Total</th>
+            </tr>
+        </thead>
+
+        <tr class="linhasTabela">
+            <td class="info-nome">Pedro</td>
+            <td class="info-produto">Pastel de Carne</td>
+            <td class="info-qtd">7</td>
+            <td class="info-valor">9</td>
+            <td class="info-total">-</td>
+        </tr>
+        <tr class="linhasTabela">
+            <td class="info-nome">Rafael</td>
+            <td class="info-produto">Pastel de Pizza</td>
+            <td class="info-qtd"></td>
+            <td class="info-valor"> 2</td>
+            <td class="info-total">-</td>
+        </tr>
+        <tr class="linhasTabela">
+            <td class="info-nome">Douglas</td>
+            <td class="info-produto">Pastel de Queijo</td>
+            <td class="info-qtd">8</td>
+            <td class="info-valor">2</td>
+            <td class="info-total">-</td>
+        </tr>
+        <tr class="linhasTabela">
+            <td class="info-nome">Matheus</td>
+            <td class="info-produto">Pastel de Frango</td>
+            <td class="info-qtd">6</td>
+            <td class="info-valor"></td>
+            <td class="info-total">-</td>
+        </tr>
+    </table>
+
+    <h1 class="nova">Adicionar nova encomenda</h1>
+
+    <form>
+        <div class="tudo">
+            <div class="nome">
+                <label for="info-nome">Nome:</label><br>
+                <input type="text" class="idNome"><br>
+            </div>
+            
+            <div class="produto">
+                <label for="info-produto" >Produto:</label><br>
+                <select class="idProduto">
+                    <option class="selecionar"><b>Selecione</b></option>
+                    <option class="opcoes">Pastel de Frango</option>
+                    <option class="opcoes">Pastel de Queijo</option>
+                    <option class="opcoes">Pastel de Carne</option>
+                    <option class="opcoes">Pastel de Pizza</option>
+                    <option class="opcoes">Pastel de Calabresa c/ Queijo</option>
+                    <option class="opcoes">Pastel de Carne Seca c/ Queijo</option>
+                </select><br>
+            </div>
+            
+            <div class="qtd">
+                <label class="label">Quantidade:</label><br>
+                <input type="number" class="idQtd"><br>
+            </div>
+
+            <div class="unitario">
+                <label class="label">R$ Unitário:</label><br>
+                <input type="text" class="idUnitario"><br>
+            </div>
+
+        </div>
+
+        <button class="botao" id="adicionar-encomenda" type="submit" onclick=Nova()>Adicionar</button>
+        
+    </form>
+
+    <script src="calculaTotal.js"></script>
+    <script src="incluirEncomenda.js"></script>
+</body>
+
+</html>
