@@ -1,0 +1,76 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+header{
+    background-color: red;
+}
+.logo{
+    width: 05%;
+}
+.encomendas{
+    margin-left: 50px;
+}
+table{
+    margin-left: 50px;
+    border-collapse: collapse;
+    margin-top: 20px;
+    border: 1px solid black;
+    width: 50%;
+}
+thead{
+    background-color: yellow;
+    color: orange;
+}
+th, td{
+    text-align: center;
+    border: 1px solid black;
+    padding: 4px;
+}
+.nova{
+    margin-left: 50px;
+    margin-top: 40px;
+}
+
+/*Formulário*/
+.botao{
+    margin-left: 23%;
+    margin-top: 60px;
+    font-size: 20px;
+    background-color: red;
+    width: 150;
+    height: 40;
+    font-weight: bold;
+    color: yellow;
+    border-color: red;
+}
+.tudo{
+    display: flex;
+    flex-direction: row;
+    margin-top: 1%;
+}
+.nome{
+    margin-left: 50px;
+}
+.qtd, .unitario, .produto{
+    margin-left: 30px;
+}
+.input{
+    height: 23px;
+    width: 200px;
+}
+.label{
+    font-size: 18px;
+}
+#filtrar-tabela{
+    width: 19.5%;
+    height: 35px;
+    margin-bottom: 10px;
+}
+.invisivel{
+    display: none;
+}
+.fadeOut{
+    opacity: 0;
+    transition: 1s;
+}
