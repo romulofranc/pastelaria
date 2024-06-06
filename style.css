@@ -62,3 +62,15 @@ th, td{
 .label{
     font-size: 18px;
 }
+#filtrar-tabela{
+    width: 19.5%;
+    height: 35px;
+    margin-bottom: 10px;
+}
+.invisivel{
+    display: none;
+}
+.fadeOut{
+    opacity: 0;
+    transition: 1s;
+}
